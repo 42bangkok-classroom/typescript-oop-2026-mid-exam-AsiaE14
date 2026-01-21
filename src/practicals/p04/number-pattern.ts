@@ -8,8 +8,8 @@ if(isNaN(Number(a))){
     let pattern =""
  let  args =Number(a);
 
- for (let i = 0; i <=args; i++) {    
-    for (let j = 0; j <= (args-i); j++) {  
+ for (let i = 0; i <args; i++) {    
+    for (let j = 0; j < (args-i)-2; j++) {  
         
             pattern += " ";
      
