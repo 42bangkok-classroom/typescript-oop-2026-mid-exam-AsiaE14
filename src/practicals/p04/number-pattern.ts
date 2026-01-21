@@ -8,13 +8,15 @@ if(isNaN(Number(a))){
     let pattern =""
  let  args =Number(a);
 
- for (let i = 1; i <args; i++) {    
-    for (let j = args; j >i; j--) {   
+ for (let i = 0; i <args; i++) {    
+    for (let j = args; j >=i+2; j--) {   
+        
         pattern += " ";
+        
     }
 
-    for (let k = i; k >= 1; k--) {     
-        pattern += k+"";
+    for (let k = i; k >= 0; k--) {     
+        pattern += (k+1)+"";
     }
     pattern += "\n";  
 }
