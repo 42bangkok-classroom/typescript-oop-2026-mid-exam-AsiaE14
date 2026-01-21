@@ -8,21 +8,22 @@ if(isNaN(Number(a))){
     let pattern =""
  let  args =Number(a);
 
- for (let i = 0; i <args; i++) {    
-    for (let j = args; j >=i+2; j--) {   
+ for (let i = 1; i <args; i++) {    
+    for (let j = args-i; j >=0; j--) {   
         
         pattern += " ";
         
     }
 
-    for (let k = i; k >= 0; k--) {     
-        pattern += (k+1)+"";
+    for (let k = i; k >= 1; k--) {     
+        pattern += (k)+"";
     }
     pattern += "\n";  
-}
+  
+}  console.log(pattern);   
 
 
 
-console.log(pattern);   
+
 }
 
